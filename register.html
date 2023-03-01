@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>register</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>会員登録</h1>
+      <form action="index.html" name="register__form" id="register__form">
+        <table cellpadding="5" cellspacing="0">
+          <tr>
+            <td><strong>ニックネーム</strong></td>
+            <td>
+              <input name="name" id="name" required type="text" maxlength="8" />
+            </td>
+          </tr>
+          <tr>
+            <td><strong>パスワード</strong></td>
+            <td>
+              <input
+                name="password"
+                id="password"
+                required
+                type="password"
+                maxlength="12"
+              />
+            </td>
+          </tr>
+          <tr class="input_tr">
+            <td><strong>郵便番号（半角英数）</strong></td>
+            <td>
+              <input
+                name="inputzip3"
+                id="inputzip3"
+                required
+                type="text"
+                size="6"
+                maxlength="3"
+              />-<input
+                name="inputzip4"
+                id="inputzip4"
+                type="text"
+                size="8"
+                maxlength="4"
+              />
+              <button id="zip__search">検索</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>都道府県</strong></td>
+            <td><input id="address1" required type="text" value="" /></td>
+          </tr>
+          <tr>
+            <td><strong>市・区</strong></td>
+            <td><input id="address2" required type="text" /></td>
+          </tr>
+          <tr>
+            <td><strong>町・村・番地</strong></td>
+            <td><input id="address3" required type="text" /></td>
+          </tr>
+        </table>
+        <br />
+        <div class="button__container">
+          <button id="submit">登録</button>
+          <a href="index.html">ログインページへ</a>
+        </div>
+      </form>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>

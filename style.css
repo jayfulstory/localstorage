@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.container {
+  padding: 50px;
+  max-width: 1200px;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+.logout,
+.greeting,
+.address,
+.createId {
+  display: block;
+}
+
+.logout.hidden,
+.greeting.hidden,
+.address.hidden,
+.createId.hidden {
+  display: none;
+}
+
+#register__form {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login {
+  display: block;
+  text-align: right;
+}
+
+#login.hidden {
+  display: none;
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+}
