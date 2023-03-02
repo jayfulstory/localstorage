@@ -25,6 +25,8 @@ function loginCheck(e) {
     logOut.classList.remove('hidden');
     greeting.classList.remove('hidden');
     address.classList.remove('hidden');
+  } else {
+    alert('IDまたはパスワードを確認してください');
   }
 }
 

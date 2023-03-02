@@ -15,7 +15,14 @@
           <tr>
             <td><strong>ニックネーム</strong></td>
             <td>
-              <input name="name" id="name" required type="text" maxlength="8" />
+              <input
+                name="name"
+                id="name"
+                required
+                type="text"
+                maxlength="8"
+                placeholder="最大８文字"
+              />
             </td>
           </tr>
           <tr>
@@ -27,6 +34,7 @@
                 required
                 type="password"
                 maxlength="12"
+                placeholder="最大12文字"
               />
             </td>
           </tr>
@@ -64,10 +72,8 @@
           </tr>
         </table>
         <br />
-        <div class="button__container">
-          <button id="submit">登録</button>
-          <a href="index.html">ログインページへ</a>
-        </div>
+        <button id="submit">登録</button>
+        <a class="myPage" href="index.html">ログインページへ</a>
       </form>
     </div>
     <script src="register.js"></script>
